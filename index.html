@@ -63,7 +63,7 @@
             y: 0,
             w: line.w,
             h: 200,
-            speed: 5,
+            speed: 4,
             _move: function () {
                 if (this.y + this.h / 2 < ball.y + ball.r) {
                     this.y += this.speed
@@ -73,7 +73,7 @@
                 }
             },
             speedUp: function () {
-                this.speed += 2
+                this.speed += 1
 
             },
             draw: function () {
@@ -108,7 +108,7 @@
             x: field.w / 2,
             y: field.h / 2,
             r: 20,
-            speed: 5,
+            speed: 7,
             directionX: 1,
             directionY: 1,
             _calcPosition: function () {
